@@ -8,6 +8,9 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:location/location.dart';
 import 'package:http/http.dart' as http;
+import 'package:logging/logging.dart';
+
+
 
 List<CameraDescription> cameras;
 var unique_id = "ABCDEFG.jpg";
@@ -34,6 +37,9 @@ class BaseCameraApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Logger.root.onRecord.listen((LogRecord rec) {
+      print('${rec.level.name}: ${rec.time}: ${rec.message}');
+    });
     return MaterialApp(
       home: CameraApp(storage: storage),
     );
@@ -47,6 +53,9 @@ class _CameraAppState extends State<CameraApp> {
   String imagePath;
 
   Future<void> _uploadFile(String filePath, LocationData currentLocation) async {
+
+    final log = Logger('_uploadFile');
+
     final File file = File(filePath);
     final StorageReference ref =
       widget.storage.ref().child(unique_id);
@@ -64,6 +73,7 @@ class _CameraAppState extends State<CameraApp> {
     String fileName = unique_id;
     //make a request to endpoint
     http.post(url, body: {'bucketName': bucketName, 'fileName': fileName, 'location':locationString}).then((response){
+      log.info(response.body);
       showInSnackBar(response.body);
     });
 
