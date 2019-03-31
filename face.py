@@ -24,7 +24,7 @@ params = {
     'returnFaceLandmarks': 'false',
     'returnFaceAttributes': 'age,gender,headPose,smile,facialHair,glasses,emotion,hair,makeup,occlusion,accessories,blur,exposure,noise',
 }
-'''
+
 response1 = requests.post(face_api_url, params=params, headers=headers, data=data1)
 response2 = requests.post(face_api_url, params=params, headers=headers, data=data2)
 response3 = requests.post(face_api_url, params=params, headers=headers, data=data3)
@@ -37,10 +37,10 @@ faceId1 = response1.json()[0]['faceId']
 faceId2 = response2.json()[0]['faceId']
 faceId3 = response3.json()[0]['faceId']
 
-print "faceId =", faceId1
-print "faceId =", faceId2
-print "faceId =", faceId3
-'''
+print ("faceId =", faceId1)
+print ("faceId =", faceId2)
+print ("faceId =", faceId3)
+
 
 f1 = '99d7d516-1594-4257-9f80-2146a9d07692'
 f2 = '08780db9-33df-432d-a50a-4e2634527188'
@@ -52,8 +52,8 @@ headers = {
     'Ocp-Apim-Subscription-Key': subscription_key
     }
 data = json.dumps({
-    "faceId1": '99d7d516-1594-4257-9f80-2146a9d07692',
-    "faceId2": '08780db9-33df-432d-a50a-4e2634527188'
+    "faceId1": f1,
+    "faceId2": f2
 })
 
 res = requests.post(verify_api_url, params=None, headers=headers, data=data)
