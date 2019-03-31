@@ -1,0 +1,110 @@
+{
+  "project_info": {
+    "project_number": "993671371585",
+    "firebase_url": "https://personal-best-team-31-ms2-v2.firebaseio.com",
+    "project_id": "personal-best-team-31-ms2-v2",
+    "storage_bucket": "personal-best-team-31-ms2-v2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993671371585:android:22a77f5d51251d01",
+        "android_client_info": {
+          "package_name": "com.example.team31_personalbest_ms2v2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993671371585-b0006j545orbv4g7gp3uqgpdnlqlhasr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.team31_personalbest_ms2v2",
+            "certificate_hash": "49bcb40c3a964c04547acd7ab1e9a32c8ece9f37"
+          }
+        },
+        {
+          "client_id": "993671371585-debvrbgo6ehe3roue7tpvfro6oa1qg12.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.team31_personalbest_ms2v2",
+            "certificate_hash": "7eeaa5c82644c0e8251dd40fdd50d1de0ccf84ba"
+          }
+        },
+        {
+          "client_id": "993671371585-20q3vpiqj1dalse4sj9rroinsflchpoe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.team31_personalbest_ms2v2",
+            "certificate_hash": "668829b31002b914b9477ef35803f6746c25536a"
+          }
+        },
+        {
+          "client_id": "993671371585-as2pmm0mvc6irlsbpekprqspi17cehu0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.team31_personalbest_ms2v2",
+            "certificate_hash": "b13e2c31fe6b35338c3a83b1348be8f4bc88f9e9"
+          }
+        },
+        {
+          "client_id": "993671371585-77cese75n7dsmvsbmk2lejomo0nfgkt7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF9CaxkSm1Spczljh9UEamMgkRQ4efcLQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993671371585-77cese75n7dsmvsbmk2lejomo0nfgkt7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993671371585:android:4ee99f3c0786a959",
+        "android_client_info": {
+          "package_name": "yougofindme.mobile_client"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993671371585-77cese75n7dsmvsbmk2lejomo0nfgkt7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF9CaxkSm1Spczljh9UEamMgkRQ4efcLQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
